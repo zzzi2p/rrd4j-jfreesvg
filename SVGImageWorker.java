@@ -10,7 +10,7 @@ import org.jfree.svg.SVGGraphics2D;
 import org.jfree.svg.SVGHints;
 
 /**
- *  rrd4j adapter for jfreesvg
+ *  RRD4J adapter for JFreeSVG
  *
  *  Requires: https://github.com/jfree/jfreesvg
  *  Requires: rrd4j 3.9.1 or higher
@@ -24,7 +24,7 @@ import org.jfree.svg.SVGHints;
  *      outputstream.write(graph.getRrdGraphInfo().getBytes());
  *</pre>
  *
- *  License: Apache 2.0 (same as rrd4j)
+ *  License: Apache 2.0 (same as RRD4J)
  *
  *  @since 2024-05-12
  *  @author zzz
