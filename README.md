@@ -6,6 +6,17 @@ Requires Java 8 or higher, [RRD4J 3.9.1 or higher](https://github.com/rrd4j/rrd4
 Note that JFreeSVG says Java 11 is required but that's apparently only for modules,
 works fine with Java 8 when built from source.
 
+
+### Benefits
+
+- Faster server-side rendering
+- Greatly reduced server-side memory usage
+- Crisper, scaleable images
+- Smaller image files (especially if gzipped)
+- Much less bandwidth usage if images are gzipped in-flight
+- JFreeSVG binary is only 50KB
+
+
 ### Usage Example
 
 No ImageIO/BufferedImage/ImageWriter required!
@@ -14,6 +25,11 @@ No ImageIO/BufferedImage/ImageWriter required!
 RRDGraph graph = new RrdGraph(graphdef, new SVGImageWorker(width, height));
 outputstream.write(graph.getRrdGraphInfo().getBytes());
 ```
+
+### TODO
+
+Create a version for [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys) + [Apache Batik](https://xmlgraphics.apache.org/batik/)
+
 
 ### License
 
