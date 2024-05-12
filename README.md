@@ -15,6 +15,7 @@ works fine with Java 8 when built from source.
 - Smaller image files (especially if gzipped)
 - Much less bandwidth usage if images are gzipped in-flight
 - JFreeSVG binary is only 50KB
+- Rendered images almost identical to the PNG versions
 
 
 ### Usage Example
@@ -29,6 +30,11 @@ outputstream.write(graph.getRrdGraphInfo().getBytes());
 ### TODO
 
 Create a version for [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys) + [Apache Batik](https://xmlgraphics.apache.org/batik/)
+
+
+### DEMO
+
+![Sample Image](https://raw.githubusercontent.com/zzzi2p/rrd4j-jfreesvg/main/sample.svg)
 
 
 ### License
