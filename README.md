@@ -27,14 +27,14 @@ RRDGraph graph = new RrdGraph(graphdef, new SVGImageWorker(width, height));
 outputstream.write(graph.getRrdGraphInfo().getBytes());
 ```
 
-### TODO
-
-Create a version for [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys) + [Apache Batik](https://xmlgraphics.apache.org/batik/)
-
-
 ### DEMO
 
 ![Sample Image](https://raw.githubusercontent.com/zzzi2p/rrd4j-jfreesvg/main/sample.svg)
+
+
+### TODO
+
+Create a version for [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys) + [Apache Batik](https://xmlgraphics.apache.org/batik/)
 
 
 ### License
