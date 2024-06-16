@@ -31,6 +31,7 @@ outputstream.write(graph.getRrdGraphInfo().getBytes());
 
 ![Sample Image](https://raw.githubusercontent.com/zzzi2p/rrd4j-jfreesvg/main/sample.svg)
 
+![Sample Image 2](https://raw.githubusercontent.com/zzzi2p/rrd4j-jfreesvg/main/test.svg)
 
 ### TODO
 
