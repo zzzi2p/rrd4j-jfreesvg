@@ -47,7 +47,7 @@ public class SVGImageWorker extends ImageWorker {
         setG2d(g2d);
         initialAffineTransform = g2d.getTransform();
         g2d.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_NORMALIZE);
-        g2d.setRenderingHint(SVGHints.KEY_TEXT_RENDERING, "optimizeLegibility");
+        g2d.setRenderingHint(SVGHints.KEY_TEXT_RENDERING, SVGHints.VALUE_TEXT_RENDERING_LEGIBILITY);
     }
 
     protected void reset(Graphics2D g2d) {
