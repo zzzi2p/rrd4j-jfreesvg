@@ -19,7 +19,7 @@ import org.w3c.dom.DOMImplementation;
  *  RRD4J adapter for Apache Batik
  *
  *  Requires: Apache Batik https://xmlgraphics.apache.org/batik/download.html
- *  Requires: rrd4j 3.9.1 or higher
+ *  Requires: rrd4j 3.10 or higher
  *  Ref: https://github.com/rrd4j/rrd4j/issues/165
  *
  *  Specific Batik jars/modules required, if you don't want to just use the 4 MB batik-all.jar,

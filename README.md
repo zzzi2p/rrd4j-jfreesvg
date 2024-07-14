@@ -1,7 +1,7 @@
 Adapter for RRD4J to create SVG images
 ======================================
 
-Requires Java 8 or higher, [RRD4J 3.9.1 or higher](https://github.com/rrd4j/rrd4j) and [JFreeSVG](https://github.com/jfree/jfreesvg).
+Requires Java 8 or higher, [RRD4J 3.10 or higher](https://github.com/rrd4j/rrd4j) and [JFreeSVG](https://github.com/jfree/jfreesvg).
 See below for Apache Batik version.
 
 Note that JFreeSVG says Java 11 is required but that's apparently only for modules,

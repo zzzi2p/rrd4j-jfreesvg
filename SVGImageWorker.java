@@ -14,7 +14,7 @@ import org.jfree.svg.SVGHints;
  *  RRD4J adapter for JFreeSVG
  *
  *  Requires: https://github.com/jfree/jfreesvg
- *  Requires: rrd4j 3.9.1 or higher
+ *  Requires: rrd4j 3.10 or higher
  *  Ref: https://github.com/rrd4j/rrd4j/issues/165
  *
  *  Usage:
