@@ -8,7 +8,7 @@ There are three flavors here, with different dependencies:
 
 See below for Apache Batik and Simple flavors.
 
-### Benefits
+## Benefits
 
 - Faster server-side rendering
 - Greatly reduced server-side memory usage
@@ -18,7 +18,7 @@ See below for Apache Batik and Simple flavors.
 - Rendered images almost identical to the PNG versions
 
 
-### jfreesvg Adapter
+## jfreesvg Adapter
 
 Requires Java 8 or higher, [RRD4J 3.10 or higher](https://github.com/rrd4j/rrd4j) and [JFreeSVG](https://github.com/jfree/jfreesvg).
 
@@ -28,7 +28,7 @@ works fine with Java 8 when built from source.
 Pro: Only 50KB. Con: GPLv3
 
 
-## Usage Example
+### Usage Example
 
 No ImageIO/BufferedImage/ImageWriter required!
 
@@ -37,13 +37,13 @@ RRDGraph graph = new RrdGraph(graphdef, new SVGImageWorker(width, height));
 outputstream.write(graph.getRrdGraphInfo().getBytes());
 ```
 
-## DEMO
+### DEMO
 
 ![Sample Image](https://raw.githubusercontent.com/zzzi2p/rrd4j-jfreesvg/main/sample.svg)
 
 ![Sample Image 2](https://raw.githubusercontent.com/zzzi2p/rrd4j-jfreesvg/main/test.svg)
 
-### Apache Batik Adapter
+## Apache Batik Adapter
 
 An equivalent adapter for [Apache Batik](https://xmlgraphics.apache.org/batik/) is in BatikSVGImageWorker.java.
 Java 8 or higher.
@@ -64,14 +64,14 @@ Note that some features may require additional jars, untested.
 
 Pro: Apache licensed. Con: 4MB (or 1MB if you use only the jars listed above)
 
-## Usage Example
+### Usage Example
 
 ```java
 RRDGraph graph = new RrdGraph(graphdef, new BatikSVGImageWorker(width, height));
 outputstream.write(graph.getRrdGraphInfo().getBytes());
 ```
 
-### Simple No-Dependency Adapter
+## Simple No-Dependency Adapter
 
 An equivalent adapter without dependencies is in SimpleSVGImageWorker.java,
 together with SimpleSVGGraphics2D and SimpleSVGMaker.
@@ -83,13 +83,13 @@ Unsupported Graphics2D methods and features will throw UnsupportedOperationExcep
 
 Pros: Apache licensed, only 10KB. Con: May not support all use cases; not all Graphics2D methods are implemented.
 
-## Usage Example
+### Usage Example
 
 ```java
 RRDGraph graph = new RrdGraph(graphdef, new SimpleSVGImageWorker(width, height));
 outputstream.write(graph.getRrdGraphInfo().getBytes());
 ```
 
-### License
+## License
 
 All flavors are Apache 2.0 (same as RRD4J)
